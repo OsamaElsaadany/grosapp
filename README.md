@@ -3,10 +3,10 @@
 A new Flutter project.
 
 output
-![BMI screen for normal](https://github.com/OsamaElsaadany/BMICalc/blob/main/lib/assets/bmi_scrforNormal.jpg?raw=true)
-![result screen for normal](https://github.com/OsamaElsaadany/BMICalc/blob/main/lib/assets/resScrforNormal.jpg?raw=true)
-![BMI screen for obese](https://github.com/OsamaElsaadany/BMICalc/blob/main/lib/assets/bmiScrforObese.jpg?raw=true)
-![result screen for obese](https://github.com/OsamaElsaadany/BMICalc/blob/main/lib/assets/resScrforObese.jpg?raw=true)
+![location](https://github.com/OsamaElsaadany/grosapp/blob/main/assets/images/output/location.jpg)
+![login](https://github.com/OsamaElsaadany/grosapp/blob/main/assets/images/output/login.png)
+![signup](https://github.com/OsamaElsaadany/grosapp/blob/main/assets/images/output/signup.png)
+![splash](https://github.com/OsamaElsaadany/grosapp/blob/main/assets/images/output/splash.png)
 
 
 //Bottom navigation bar in flutter 
