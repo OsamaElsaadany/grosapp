@@ -25,7 +25,7 @@ class Homescreen extends StatelessWidget {
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(24, 17, 24, 24),
+        padding: const EdgeInsets.fromLTRB(24, 17, 24, 0),
         child: Column(
           children: [
             Column(

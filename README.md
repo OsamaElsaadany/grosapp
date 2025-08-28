@@ -7,6 +7,9 @@ output
 ![login](https://github.com/OsamaElsaadany/grosapp/blob/main/assets/images/output/login.png)
 ![signup](https://github.com/OsamaElsaadany/grosapp/blob/main/assets/images/output/signup.png)
 ![splash](https://github.com/OsamaElsaadany/grosapp/blob/main/assets/images/output/splash.png)
+![cart](assets\images\output\cart.png)
+![home](assets\images\output\home.png)
+
 
 
 //Bottom navigation bar in flutter 
