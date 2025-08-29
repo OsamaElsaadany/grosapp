@@ -4,7 +4,6 @@ import 'package:gros_app/core/functions/navigation.dart';
 import 'package:gros_app/core/utils/colors.dart';
 import 'package:gros_app/core/utils/text_Styles.dart';
 import 'package:gros_app/core/wedgits/btn.dart';
-import 'package:gros_app/features/home/homeScreen.dart';
 import 'package:gros_app/features/main/mainapp_screen.dart';
 
 class Accepted extends StatelessWidget {

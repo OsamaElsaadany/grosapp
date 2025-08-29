@@ -9,6 +9,10 @@ output
 ![splash](https://github.com/OsamaElsaadany/grosapp/blob/main/assets/images/output/splash.png)
 ![cart](https://github.com/OsamaElsaadany/grosapp/blob/main/assets/images/output/cart.png)
 ![home](https://github.com/OsamaElsaadany/grosapp/blob/main/assets/images/output/home.png)
+![accepted_screen](https://github.com/OsamaElsaadany/grosapp/blob/main/assets/images/output/accepted_screen.jpg)
+![bottom_Sheet](https://github.com/OsamaElsaadany/grosapp/blob/main/assets/images/output/bottom_Sheet.jpg)
+![product_detailed_screen](https://github.com/OsamaElsaadany/grosapp/blob/main/assets/images/output/product_detailed_screen.jpg)
+![welcome_screen](https://github.com/OsamaElsaadany/grosapp/blob/main/assets/images/output/welcome_screen.jpg)
 
 
 
