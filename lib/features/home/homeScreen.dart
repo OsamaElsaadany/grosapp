@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gros_app/core/constants/assetsimages.dart';
 import 'package:gros_app/core/utils/colors.dart';
-import 'package:gros_app/core/utils/text_Styles.dart';
 import 'package:gros_app/features/home/wedgits/bstsell.dart';
 import 'package:gros_app/features/home/wedgits/excoff.dart';
 

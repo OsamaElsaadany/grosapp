@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gros_app/core/utils/colors.dart';
 import 'package:gros_app/features/splash/splashScreen.dart';
 
 void main() {
@@ -10,9 +11,16 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Splashscreen());
+      theme: ThemeData(
+        scaffoldBackgroundColor: appcolor.whitecolor,
+        appBarTheme: AppBarTheme(
+          backgroundColor: appcolor.whitecolor,
+          surfaceTintColor: Colors.transparent,
+        ),
+      ),
+      home: Splashscreen(),
+    );
   }
 }

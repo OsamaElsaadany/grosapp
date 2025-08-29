@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gros_app/core/utils/colors.dart';
-import 'package:gros_app/features/auth/pages/login.dart';
 import 'package:gros_app/features/cart/pages/cart.dart';
 import 'package:gros_app/features/home/homeScreen.dart';
 
@@ -12,7 +11,7 @@ class MainappScreen extends StatefulWidget {
 }
 
 class _MainappScreenState extends State<MainappScreen> {
-  List<Widget> screens = [Homescreen(),Login(),cartsc()];
+  List<Widget> screens = [Homescreen(),cartsc()];
 
   int currentindex = 0;
 
@@ -53,13 +52,14 @@ class _MainappScreenState extends State<MainappScreen> {
                 icon: Icon(Icons.shopping_bag_outlined),
                 label: 'shop',
               ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.search_sharp),
-                label: 'search',
-              ),
+              
               BottomNavigationBarItem(
                 icon: Icon(Icons.shopping_cart_outlined),
                 label: 'cart',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.search_sharp),
+                label: 'search',
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.favorite_border_sharp),

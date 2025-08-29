@@ -7,6 +7,7 @@ import 'package:gros_app/core/wedgits/btn.dart';
 import 'package:gros_app/core/wedgits/custom.dart';
 import 'package:gros_app/core/wedgits/custompass.dart';
 import 'package:gros_app/features/auth/pages/signup.dart';
+import 'package:gros_app/features/main/mainapp_screen.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -59,8 +60,7 @@ class _LoginState extends State<Login> {
                     validator: (value) {
                       if (value == null || value.isEmpty) {
                         return 'please enter some text ';
-                      }
-                      else if(!valid_email(value)){
+                      } else if (!valid_email(value)) {
                         return 'Enter a valid email';
                       }
                       return null;
@@ -100,7 +100,9 @@ class _LoginState extends State<Login> {
                     h: 67,
                     title: 'Login',
                     ontap: () {
-                      if (formkey.currentState!.validate()) {}
+                      if (formkey.currentState!.validate()) {
+                        pushrepla(context, MainappScreen());
+                      }
                     },
                   ),
                   SizedBox(height: 24),

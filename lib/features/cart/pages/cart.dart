@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:gros_app/core/constants/assetsimages.dart';
+import 'package:gros_app/core/functions/navigation.dart';
 import 'package:gros_app/core/utils/colors.dart';
 import 'package:gros_app/core/utils/text_Styles.dart';
+import 'package:gros_app/core/wedgits/btn.dart';
+import 'package:gros_app/features/accepted/accepted.dart';
 import 'package:gros_app/features/home/model/productmodel.dart';
 
 class cartsc extends StatefulWidget {
@@ -165,7 +168,7 @@ class _cartscState extends State<cartsc> {
         ],
       ),
       bottomNavigationBar: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: EdgeInsets.fromLTRB(16, 2, 16, 10),
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
             backgroundColor: appcolor.primarycolor,
@@ -176,6 +179,7 @@ class _cartscState extends State<cartsc> {
           ),
           onPressed: () {
             // action checkout
+            modsheet(context);
           },
           child: Text(
             "Go to Checkout       ${calculateTotal()} ",
@@ -183,6 +187,167 @@ class _cartscState extends State<cartsc> {
           ),
         ),
       ),
+    );
+  }
+
+  Future<dynamic> modsheet(BuildContext context) {
+    return showModalBottomSheet(
+      isScrollControlled: true,
+      context: context,
+      builder: (context) {
+        return Container(
+          decoration: BoxDecoration(
+            color: appcolor.textback,
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(30),
+              topRight: Radius.circular(30),
+            ),
+          ),
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                Padding(
+                  padding: EdgeInsets.fromLTRB(25, 30, 25, 0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Checkout',
+                        style: Text_Style.tstyle(color: appcolor.darkdeep),
+                      ),
+                      Icon(Icons.cancel_rounded),
+                    ],
+                  ),
+                ),
+                SizedBox(height: 20),
+                Divider(color: appcolor.bord),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(25, 0, 25, 0),
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            'Delivery',
+                            style: Text_Style.tstyle(
+                              fontsize: 18,
+                              color: appcolor.graycolor,
+                            ),
+                          ),
+                          Row(
+                            children: [
+                              Text(
+                                'Select Method',
+                                style: Text_Style.tstyle(
+                                  fontsize: 18,
+                                  color: appcolor.darkdeep,
+                                ),
+                              ),
+                              SizedBox(width: 10),
+                              Icon(Icons.arrow_forward_ios),
+                            ],
+                          ),
+                        ],
+                      ),
+                      Divider(color: appcolor.bord),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            'Pament',
+                            style: Text_Style.tstyle(
+                              fontsize: 18,
+                              color: appcolor.graycolor,
+                            ),
+                          ),
+                          Row(
+                            children: [
+                              Image.asset(images.pay),
+                              SizedBox(width: 10),
+                              Icon(Icons.arrow_forward_ios),
+                            ],
+                          ),
+                        ],
+                      ),
+                      Divider(color: appcolor.bord),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            'Promo Code',
+                            style: Text_Style.tstyle(
+                              fontsize: 18,
+                              color: appcolor.graycolor,
+                            ),
+                          ),
+                          Row(
+                            children: [
+                              Text(
+                                'Pick discount',
+                                style: Text_Style.tstyle(
+                                  fontsize: 18,
+                                  color: appcolor.darkdeep,
+                                ),
+                              ),
+                              SizedBox(width: 10),
+                              Icon(Icons.arrow_forward_ios),
+                            ],
+                          ),
+                        ],
+                      ),
+                      Divider(color: appcolor.bord),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            'Total Cost',
+                            style: Text_Style.tstyle(
+                              fontsize: 18,
+                              color: appcolor.graycolor,
+                            ),
+                          ),
+                          Row(
+                            children: [
+                              Text(
+                                '\$${calculateTotal()}',
+                                style: Text_Style.tstyle(
+                                  fontsize: 18,
+                                  color: appcolor.darkdeep,
+                                ),
+                              ),
+                              SizedBox(width: 10),
+                              Icon(Icons.arrow_forward_ios),
+                            ],
+                          ),
+                        ],
+                      ),
+                      Divider(color: appcolor.bord),
+                      SizedBox(height: 20),
+                      Text(
+                        'By placing an order you agree to ourTerms And Conditions',
+                        style: Text_Style.tstyle(
+                          color: appcolor.darkdeep,
+                          fontsize: 14,
+                        ),
+                      ),
+                      SizedBox(height: 25),
+                      btn(
+                        h: 67,
+                        title: 'Place Order',
+                        ontap: () {
+                          pushAndRemove(context, Accepted());
+                        },
+                      ),
+                      SizedBox(height: 20),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        );
+      },
     );
   }
 }

@@ -6,6 +6,7 @@ import 'package:gros_app/core/utils/colors.dart';
 import 'package:gros_app/features/auth/pages/login.dart';
 import 'package:gros_app/features/home/homeScreen.dart';
 import 'package:gros_app/features/main/mainapp_screen.dart';
+import 'package:gros_app/features/welcome/pages/welcome.dart';
 
 class Splashscreen extends StatefulWidget {
   const Splashscreen({super.key});
@@ -19,7 +20,7 @@ class _SplashscreenState extends State<Splashscreen> {
   void initState() {
     super.initState();
     Future.delayed(Duration(seconds: 3), () {
-      pushrepla(context,MainappScreen());
+      pushrepla(context,welcome());
     });
   }
 

@@ -5,6 +5,8 @@ class Productmodel {
   final String weight;
   final int id;
   int quantity = 1;
+  final String imdetail;
+
   Productmodel({
     required this.price,
     required this.name,
@@ -12,6 +14,7 @@ class Productmodel {
     required this.id,
     required this.image,
     required this.quantity,
+    required this.imdetail,
   });
 }
 
@@ -23,6 +26,7 @@ List<Productmodel> products = [
     id: 1,
     image: 'assets/images/banana.png',
     quantity: 0,
+    imdetail: 'assets/images/appldet.svg',
   ),
   Productmodel(
     price: 10,
@@ -31,6 +35,7 @@ List<Productmodel> products = [
     id: 2,
     image: 'assets/images/apple.png',
     quantity: 0,
+    imdetail: 'assets/images/appldet.svg',
   ),
   Productmodel(
     price: 15,
@@ -39,6 +44,7 @@ List<Productmodel> products = [
     id: 3,
     image: 'assets/images/mango.png',
     quantity: 0,
+    imdetail: 'assets/images/appldet.svg',
   ),
   Productmodel(
     price: 20,
@@ -47,6 +53,7 @@ List<Productmodel> products = [
     id: 4,
     image: 'assets/images/banana.png',
     quantity: 0,
+    imdetail: 'assets/images/appldet.svg',
   ),
   Productmodel(
     price: 10,
@@ -55,6 +62,7 @@ List<Productmodel> products = [
     id: 5,
     image: 'assets/images/apple.png',
     quantity: 0,
+    imdetail: 'assets/images/appldet.svg',
   ),
   Productmodel(
     price: 15,
@@ -63,5 +71,6 @@ List<Productmodel> products = [
     id: 6,
     image: 'assets/images/mango.png',
     quantity: 0,
+    imdetail: 'assets/images/appldet.svg',
   ),
 ];

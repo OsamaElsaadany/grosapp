@@ -1,6 +1,6 @@
 name: gros_app
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
@@ -10,7 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_svg: ^2.2.0
-  
+
 dev_dependencies:
   flutter_lints: ^5.0.0
   flutter_test:
@@ -21,10 +21,12 @@ flutter:
   assets:
     - assets/images/logo.svg
     - assets/images/carrot.png
-    - assets/images/backgr.png
     - assets/images/location.svg
     - assets/images/banana.png
     - assets/images/mango.png
     - assets/images/apple.png
     - assets/images/flfl.png
-  
+    - assets/images/backgr.png
+    - assets/images/appldet.svg
+    - assets/images/pay.png
+    - assets/images/success.png

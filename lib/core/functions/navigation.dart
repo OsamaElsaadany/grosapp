@@ -7,3 +7,15 @@ pushto(BuildContext context,Widget screen){
 pushrepla(BuildContext context,Widget screen){
   Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => screen));
 }
+
+pushAndRemove(BuildContext context, Widget screen) {
+  Navigator.pushAndRemoveUntil(
+    context,
+    MaterialPageRoute(builder: (context) => screen),
+    (route) => false,
+  );
+}
+
+pop(BuildContext context,Widget screen){
+  Navigator.pop(context, MaterialPageRoute(builder: (context) => screen));
+}

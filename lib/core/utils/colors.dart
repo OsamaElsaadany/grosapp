@@ -10,6 +10,8 @@ class appcolor {
   static const textback = Color(0xffF2F3F2);
   static const bord = Color(0xffE2E2E2);
   static const bordico = Color(0xffF0F0F0);
+  static const txt = Color(0xFCFCFCB2);
+  static const star = Color(0xffF3603F);
 
 
 }
